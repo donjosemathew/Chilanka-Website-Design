@@ -34,6 +34,9 @@ body {
   line-height: 1.6;
   font-weight: 400; }
 
+.container {
+  overflow: hidden; }
+
 header
 header {
   background-color: #ffffff; }
@@ -260,11 +263,6 @@ header {
     line-height: 22px;
     margin-top: 1rem; }
 
-.testimonials {
-  width: 100%;
-  display: flex;
-  flex-direction: row; }
-
 .faculty {
   width: 50%;
   display: flex;
@@ -300,25 +298,25 @@ header {
       word-spacing: .01rem; }
 
 .comments {
-  border-top-left-radius: 10rem;
-  background-image: linear-gradient(rgba(234, 56, 77, 0.93), rgba(234, 77, 56, 0.93)), url(../img/2.jpg);
-  width: 55%;
+  padding: 2rem;
   background-position: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-  background-color: royalblue; }
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 6rem;
+  border-top-left-radius: 1rem; }
   .comments_item {
     overflow: hidden;
     position: relative;
     margin: 2rem 0;
-    width: 70%;
+    width: 80%;
     box-shadow: 0 0.1rem 1.3rem rgba(0, 0, 0, 0.1);
     padding: 2rem;
     background-color: #ffff;
     display: flex;
     border-radius: .5rem;
+    align-self: center;
+    justify-self: center;
     flex-direction: row; }
     .comments_item_img {
       width: 13rem;
@@ -330,9 +328,17 @@ header {
       justify-content: center;
       padding-left: 1rem; }
 
+.commentcol1 {
+  grid-row: 1/span 2;
+  display: flex;
+  flex-direction: column; }
+  .commentcol1:not(:first-child) {
+    justify-items: center;
+    align-items: center; }
+
 .quoteicon {
   font-size: 20rem;
-  color: #7978783a;
+  color: #7978787c;
   position: absolute;
   top: -40%;
   right: 0;
@@ -415,6 +421,7 @@ h5 {
 h4 {
   display: inline-block;
   font-size: 3rem;
+  width: auto;
   color: #757575;
   font-weight: 300;
   word-spacing: .01rem;
