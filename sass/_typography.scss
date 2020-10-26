@@ -302,7 +302,10 @@ header{
 ///////////Testimonials
 
 .faculty{
-    width: 50%;
+  
+    
+    background-image: linear-gradient(rgba(#EA384D, .93), rgba(#ea4d38, .93)), url(../img/banner.jpg);
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -312,6 +315,7 @@ header{
     &_item{
         box-shadow: 0 .1rem 1.3rem rgba(0, 0, 0, 0.1);
         padding: 2rem;
+        width: 50%;
         background-color: #ffff;
         display: flex;
         border-radius: .5rem;
@@ -325,7 +329,7 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 1rem;
+            padding-left: 2rem;
         }
         &_title{
             font-size: 1.8rem;
@@ -349,13 +353,13 @@ header{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 0 6rem;
+    margin: 5rem 6rem;
     border-top-left-radius: 1rem;
     &_item{
         overflow: hidden;
         position: relative;
         margin: 2rem 0;
-        width: 80%;
+        width: 85%;
         box-shadow: 0 .1rem 1.3rem rgba(0, 0, 0, 0.1);
         padding: 2rem;
         background-color: #ffff;
@@ -364,6 +368,19 @@ header{
         align-self: center;
         justify-self: center;
         flex-direction: row;
+        transition: all .2s;
+        &:hover{
+            transform: scale(1.02);
+            box-shadow: 0 .1rem 1.4rem rgba(0, 0, 0, 0.15);
+           
+        }
+        &_item1{
+         position: absolute;
+                top: 25rem;
+                left: -5rem;
+                width: 20rem;
+                height: 20rem;
+        }
         &_img{
             
             width: 13rem;
@@ -375,26 +392,36 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: center;
-            padding-left: 1rem;
+            padding-left: 2rem;
         }
         
     }
     
 }
+.commentHead{
+    position: absolute;
+    top: 0;
+    left: -15%;
+ 
+}
 .commentcol1{
     grid-row: 1/span 2;
+    height: 100%;
     
     display: flex;
     flex-direction: column;
-    &:not(:first-child){
-        justify-items: center;
-        align-items: center;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    &:first-child{
+        justify-self: start;
+        align-self: flex-start;
     }
     
 }
 .quoteicon{
         font-size: 20rem;
-        color: #7978787c;
+        color: #79787831;
         position: absolute;
         top: -40%;
         right: 0;
