@@ -262,22 +262,22 @@ header {
 
 .testimonials {
   width: 100%;
-  height: 80vh;
-  background-color: aquamarine;
   display: flex;
   flex-direction: row; }
 
 .faculty {
-  width: 45%;
+  width: 50%;
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  background-color: blueviolet;
   padding: 3rem; }
   .faculty_item {
+    box-shadow: 0 0.1rem 1.3rem rgba(0, 0, 0, 0.1);
     padding: 2rem;
     background-color: #ffff;
     display: flex;
+    border-radius: .5rem;
     flex-direction: row; }
     .faculty_item_img {
       width: 13rem;
@@ -298,6 +298,45 @@ header {
       color: #757575;
       font-weight: 400;
       word-spacing: .01rem; }
+
+.comments {
+  border-top-left-radius: 10rem;
+  background-image: linear-gradient(rgba(234, 56, 77, 0.93), rgba(234, 77, 56, 0.93)), url(../img/2.jpg);
+  width: 55%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: royalblue; }
+  .comments_item {
+    overflow: hidden;
+    position: relative;
+    margin: 2rem 0;
+    width: 70%;
+    box-shadow: 0 0.1rem 1.3rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    background-color: #ffff;
+    display: flex;
+    border-radius: .5rem;
+    flex-direction: row; }
+    .comments_item_img {
+      width: 13rem;
+      height: 13rem;
+      border-radius: 50%; }
+    .comments_item_box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 1rem; }
+
+.quoteicon {
+  font-size: 20rem;
+  color: #7978783a;
+  position: absolute;
+  top: -40%;
+  right: 0;
+  font-family: 'Lato', sans-serif; }
 
 @keyframes cardIn {
   0% {
@@ -394,3 +433,15 @@ h6 {
   color: #EA384D;
   font-weight: 400;
   word-spacing: .01rem; }
+
+.facultyhead {
+  align-self: start;
+  padding-left: 0;
+  margin-bottom: 2rem; }
+
+q {
+  font-size: 1.8rem;
+  color: #757575;
+  font-weight: 300;
+  word-spacing: .01rem;
+  font-style: italic; }

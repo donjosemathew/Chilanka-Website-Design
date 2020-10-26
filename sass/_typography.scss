@@ -296,22 +296,25 @@ header{
 
 .testimonials{
     width: 100%;
-    height: 80vh;
-    background-color: aquamarine;
+    //height: 0vh;
+   // background-color: aquamarine;
     display: flex;
     flex-direction: row;
 }
 .faculty{
-    width: 45%;
+    width: 50%;
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    background-color: blueviolet;
+   // background-color: blueviolet;
     padding: 3rem;
     &_item{
+        box-shadow: 0 .1rem 1.3rem rgba(0, 0, 0, 0.1);
         padding: 2rem;
         background-color: #ffff;
         display: flex;
+        border-radius: .5rem;
         flex-direction: row;
         &_img{
             width: 13rem;
@@ -337,6 +340,53 @@ header{
             word-spacing: .01rem;
         }
     }
+}
+.comments{
+    border-top-left-radius: 10rem;
+    background-image: linear-gradient(rgba(#EA384D, .93), rgba(#ea4d38, .93)), url(../img/2.jpg);
+    width: 55%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: royalblue;
+    &_item{
+        overflow: hidden;
+        position: relative;
+        margin: 2rem 0;
+        width: 70%;
+        box-shadow: 0 .1rem 1.3rem rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        background-color: #ffff;
+        display: flex;
+        border-radius: .5rem;
+        
+        flex-direction: row;
+        &_img{
+            
+            width: 13rem;
+            height: 13rem;
+            border-radius: 50%;
+            
+        }
+        &_box{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 1rem;
+        }
+        
+    }
+    
+}
+.quoteicon{
+        font-size: 20rem;
+        color: #7978783a;
+        position: absolute;
+        top: -40%;
+        right: 0;
+        font-family: 'Lato', sans-serif;
 }
 /////////////////////////////
 /////////////animation
