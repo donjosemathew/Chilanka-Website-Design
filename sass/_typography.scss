@@ -603,21 +603,71 @@ header{
     background-color: rgb(43, 43, 43);
     display: flex;
     flex-direction: column;
-    padding: 3rem;
+    padding: 4rem 3rem;
     align-items: center;
     &_img{
         width: 16rem;
     }
     &_holder{
+        margin: 3rem 0;
         display: flex;
         flex-direction: row;
         flex: 1;
         width: 100%;
         &_sec1{
             width: 50%;
-            background-color: rgb(225, 65, 65);
-            &_nav{
-                list-style: none;
+           // background-color: rgb(225, 65, 65);
+            
+        }
+        &_credit{
+            width: 50%;
+           
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &_text{
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1.4rem;
+                padding: .5rem 1rem;
+                margin: 1.5rem;
+                text-align: center;
+                &::before{
+                    content: " ";
+                    width: 70%;
+                    height: 2px;
+                    background-color: rgb(80, 80, 80);
+                    position: absolute;
+                    top: 0;
+                }
+            }
+        }
+        &_nav{
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            position: relative;
+            &::before{
+                content: " ";
+                width: 70%;
+                height: 2px;
+                background-color: rgb(80, 80, 80);
+                position: absolute;
+            }
+            &_item{
+                font-size: 1.4rem;
+                padding: .5rem 1rem;
+                margin: 1rem;
+                transition: all .2s;
+                background-color: rgb(43, 43, 43);
+                &:hover{
+                    transform: rotate(5deg) scale(1.2);
+                    border: 2px solid #fff;
+                }
             }
         }
     }
@@ -702,7 +752,7 @@ body::-webkit-scrollbar {
   }
    
   body::-webkit-scrollbar-thumb {
-    background-color: darkgrey;
-    outline: 1px solid slategrey;
+    background-color: rgb(173, 0, 66);
+    outline: 1px solid rgb(173, 0, 66);
   }
   

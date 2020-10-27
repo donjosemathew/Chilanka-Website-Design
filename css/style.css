@@ -504,20 +504,60 @@ header {
   background-color: #2b2b2b;
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 4rem 3rem;
   align-items: center; }
   .footer_img {
     width: 16rem; }
   .footer_holder {
+    margin: 3rem 0;
     display: flex;
     flex-direction: row;
     flex: 1;
     width: 100%; }
     .footer_holder_sec1 {
+      width: 50%; }
+    .footer_holder_credit {
       width: 50%;
-      background-color: #e14141; }
-      .footer_holder_sec1_nav {
-        list-style: none; }
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .footer_holder_credit_text {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.4rem;
+        padding: .5rem 1rem;
+        margin: 1.5rem;
+        text-align: center; }
+        .footer_holder_credit_text::before {
+          content: " ";
+          width: 70%;
+          height: 2px;
+          background-color: #505050;
+          position: absolute;
+          top: 0; }
+    .footer_holder_nav {
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      position: relative; }
+      .footer_holder_nav::before {
+        content: " ";
+        width: 70%;
+        height: 2px;
+        background-color: #505050;
+        position: absolute; }
+      .footer_holder_nav_item {
+        font-size: 1.4rem;
+        padding: .5rem 1rem;
+        margin: 1rem;
+        transition: all .2s;
+        background-color: #2b2b2b; }
+        .footer_holder_nav_item:hover {
+          transform: rotate(5deg) scale(1.2);
+          border: 2px solid #fff; }
 
 @keyframes cardIn {
   0% {
@@ -570,8 +610,8 @@ body::-webkit-scrollbar-track {
   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
 
 body::-webkit-scrollbar-thumb {
-  background-color: darkgrey;
-  outline: 1px solid slategrey; }
+  background-color: #ad0042;
+  outline: 1px solid #ad0042; }
 
 h1 {
   color: #EA384D;
