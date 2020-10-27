@@ -2,6 +2,7 @@
 $bp-largest:75em ;  // 1200px
 $bp-large: 68.75em; //1100px\
 $bp-medium: 56.25em; //900px
+$bp-abovesmall:45.43em;
 $bp-small: 37.5em; //600px
 $bp-smallest:31.25rem; //500px
 
@@ -27,6 +28,9 @@ html{
     @media only screen and (max-width:$bp-medium) {
         font-size: 50.5%;
     }
+    @media only screen and (max-width:$bp-abovesmall) {
+        font-size: 48.5%;
+    }
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -51,7 +55,9 @@ header{
     flex-direction: row;
     height: 100vh;
     background-color: #ffffff;
-
+    @media only screen and (max-width:$bp-abovesmall) {
+        height: 90vh;
+    }
     
 }
 .sec1{
@@ -71,7 +77,9 @@ header{
         left: 3rem;
         height: 60rem;
         margin-bottom: -1rem;
-        
+        @media only screen and (max-width:$bp-abovesmall) {
+            left: 2rem;
+        }
     }
 }
 .sec2{
@@ -157,7 +165,8 @@ header{
     margin: 1rem;
     &_sec1{
         width: 40%;
-        background-color: #ffffff;   
+        background-color: #ffffff; 
+        
     }
     &_sec2{
         position: relative;
@@ -234,6 +243,9 @@ header{
         margin-bottom: 1.5rem;
         font-family: 'Lato', sans-serif;
         padding-left: 9rem;
+        @media only screen and (max-width:$bp-medium) {
+            padding-left: 5rem;
+        }  
     }
     &_text{
         color: #757575;
@@ -243,6 +255,9 @@ header{
         line-height: 2.5rem;
         font-family: 'Lato', sans-serif;
         padding-left: 9rem;
+        @media only screen and (max-width:$bp-medium) {
+            padding-left: 5rem;
+        }
     }
     @media only screen and (max-width:$bp-medium) {
         padding: 6rem 0;
@@ -274,11 +289,18 @@ header{
         @media only screen and (max-width:$bp-medium) {
             margin: 2.5rem 4rem;
         }
+        @media only screen and (max-width:$bp-abovesmall) {
+            margin: 2.5rem 2rem;
+        }
     }
     &_svg{
         width: 10rem;
         height: 7rem;
         fill:  #ffffff;
+        @media only screen and (max-width:$bp-abovesmall) {
+            width: 6rem;
+           height: 6rem;
+        }
     }
     &_item{
         background-image: linear-gradient(rgba(#EA384D, .93), rgba(#ea4d38, .93)), url(../img/banner.jpg);
@@ -297,11 +319,16 @@ header{
         transition: all .3s;
         background-size: cover;
         background-position: top;
-
+        @media only screen and (max-width:$bp-abovesmall) {
+            padding: 4rem 2rem;
+        }
         &:not(:last-child){
             margin-right: 4rem;
             @media only screen and (max-width:$bp-medium) {
                 margin-right: 2rem;
+            }
+            @media only screen and (max-width:$bp-abovesmall) {
+                margin-right: 1.3rem;
             }
         }
         &:hover{
@@ -319,6 +346,7 @@ header{
         text-align: center;
         line-height: 22px;
         margin-top: 1rem;
+        
         
     }
 }
@@ -508,9 +536,15 @@ header{
         justify-self: center;
         flex-direction: row;
         transition: all .2s;
+        @media only screen and (max-width:$bp-large) {
+            margin: 1.5rem 0;
+            padding: 1.8rem;
+            width: 89%;
+        }
         @media only screen and (max-width:$bp-medium) {
             margin: 1.5rem 0;
             padding: 1.8rem;
+            width: 90%;
         }
         &:hover{
             transform: scale(1.02);

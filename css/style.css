@@ -36,6 +36,9 @@ html {
   @media only screen and (max-width: 56.25em) {
     html {
       font-size: 50.5%; } }
+  @media only screen and (max-width: 45.43em) {
+    html {
+      font-size: 48.5%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -55,6 +58,9 @@ header {
   flex-direction: row;
   height: 100vh;
   background-color: #ffffff; }
+  @media only screen and (max-width: 45.43em) {
+    .headercontainer {
+      height: 90vh; } }
 
 .sec1 {
   width: 45%;
@@ -70,6 +76,9 @@ header {
     left: 3rem;
     height: 60rem;
     margin-bottom: -1rem; }
+    @media only screen and (max-width: 45.43em) {
+      .sec1_img {
+        left: 2rem; } }
 
 .sec2 {
   background-color: #ffffff;
@@ -207,6 +216,9 @@ header {
     margin-bottom: 1.5rem;
     font-family: 'Lato', sans-serif;
     padding-left: 9rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about_title {
+        padding-left: 5rem; } }
   .about_text {
     color: #757575;
     font-weight: 300;
@@ -215,6 +227,9 @@ header {
     line-height: 2.5rem;
     font-family: 'Lato', sans-serif;
     padding-left: 9rem; }
+    @media only screen and (max-width: 56.25em) {
+      .about_text {
+        padding-left: 5rem; } }
   @media only screen and (max-width: 56.25em) {
     .about {
       padding: 6rem 0;
@@ -237,10 +252,17 @@ header {
     @media only screen and (max-width: 56.25em) {
       .features .features_box {
         margin: 2.5rem 4rem; } }
+    @media only screen and (max-width: 45.43em) {
+      .features .features_box {
+        margin: 2.5rem 2rem; } }
   .features_svg {
     width: 10rem;
     height: 7rem;
     fill: #ffffff; }
+    @media only screen and (max-width: 45.43em) {
+      .features_svg {
+        width: 6rem;
+        height: 6rem; } }
   .features_item {
     background-image: linear-gradient(rgba(234, 56, 77, 0.93), rgba(234, 77, 56, 0.93)), url(../img/banner.jpg);
     animation: cardIn 1s ease-in;
@@ -263,6 +285,9 @@ header {
       @media only screen and (max-width: 56.25em) {
         .features_item:not(:last-child) {
           margin-right: 2rem; } }
+      @media only screen and (max-width: 45.43em) {
+        .features_item:not(:last-child) {
+          margin-right: 1.3rem; } }
     .features_item:hover {
       box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
       transform: scale(1.01) translateY(1rem) rotate(10deg); }
@@ -421,10 +446,16 @@ header {
     justify-self: center;
     flex-direction: row;
     transition: all .2s; }
+    @media only screen and (max-width: 68.75em) {
+      .comments_item {
+        margin: 1.5rem 0;
+        padding: 1.8rem;
+        width: 89%; } }
     @media only screen and (max-width: 56.25em) {
       .comments_item {
         margin: 1.5rem 0;
-        padding: 1.8rem; } }
+        padding: 1.8rem;
+        width: 90%; } }
     .comments_item:hover {
       transform: scale(1.02);
       box-shadow: 0 0.1rem 1.4rem rgba(0, 0, 0, 0.15); }
@@ -674,6 +705,9 @@ h5 {
   color: #f7f7f7;
   font-weight: 300;
   word-spacing: .01rem; }
+  @media only screen and (max-width: 45.43em) {
+    h5 {
+      font-size: 1.8rem; } }
 
 h4 {
   display: inline-block;
@@ -685,6 +719,9 @@ h4 {
   font-weight: 700;
   font-family: 'Lato', sans-serif;
   padding-left: 9rem; }
+  @media only screen and (max-width: 56.25em) {
+    h4 {
+      padding-left: 5rem; } }
   h4:hover {
     text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
     color: #EA384D; }
