@@ -126,7 +126,6 @@ header {
   height: 12rem; }
 
 .about {
-  height: 100vh;
   padding: 10rem 0;
   position: relative;
   background-color: #ffffff;
@@ -136,8 +135,7 @@ header {
   margin: 1rem; }
   .about_sec1 {
     width: 40%;
-    background-color: #ffffff;
-    height: 100%; }
+    background-color: #ffffff; }
   .about_sec2 {
     position: relative;
     width: 60%;
@@ -210,12 +208,10 @@ header {
 .features {
   flex-grow: 0;
   width: 100%;
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 3rem 0;
-  margin-top: 11rem; }
+  margin-bottom: 10rem; }
   .features .features_box {
     margin: 2.5rem 9rem;
     margin-top: 4rem;
@@ -445,7 +441,7 @@ header {
   font-family: 'Lato', sans-serif; }
 
 .gallery {
-  margin: 8rem 0;
+  margin: 12rem 0;
   padding: 4rem 2rem;
   width: 100%; }
   .gallery_img {

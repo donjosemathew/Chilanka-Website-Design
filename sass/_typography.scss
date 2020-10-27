@@ -130,7 +130,7 @@ header{
 /////////////About
 .about{
     
-    height: 100vh;
+    
     padding: 10rem 0;
     position: relative;
     background-color: #ffffff;
@@ -141,7 +141,7 @@ header{
     &_sec1{
         width: 40%;
         background-color: #ffffff;
-        height: 100%;
+       
         
         
     }
@@ -234,12 +234,12 @@ header{
     
     flex-grow: 0;
     width: 100%;
-    height: 90vh;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 3rem 0;
-    margin-top: 11rem;
+  
+    margin-bottom: 10rem;
    // background-image: linear-gradient(rgba(#EA384D, .93), rgba(#ea4d38, .93)), url(../img/banner.jpg);
 
     .features_box{
@@ -315,7 +315,6 @@ header{
         transition: all .2s;
         &:hover{
             background-color: rgba(255, 255, 255, 0.2);
-            
         }
         
 }
@@ -538,7 +537,7 @@ header{
 ////////////////////////////
 ///////////Gallery
 .gallery{
-    margin: 8rem 0;
+    margin: 12rem 0;
     padding: 4rem 2rem;
     width: 100%;
 
