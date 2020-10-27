@@ -470,6 +470,9 @@ header{
         width: 50%;
         flex-direction: column;
         padding: 4rem;
+        @media only screen and (max-width:$bp-small) {
+            width: 100%;
+        }
         &_item{
             display: flex;
             flex-direction: row;
@@ -483,9 +486,7 @@ header{
                 height: 5rem;
                 fill:  #ffffff;
         }
-        @media only screen and (max-width:$bp-small) {
-            width: 100%;
-        }
+        
     }
     }
     &_img{
@@ -501,6 +502,9 @@ header{
        flex-direction: column;
        justify-content: center;
        padding: 3rem;
+       @media only screen and (max-width:$bp-small) {
+        width: 100%;
+    }
    }
     padding: 3rem;
     &_item{
@@ -737,7 +741,9 @@ header{
     margin: 12rem 0;
     padding: 4rem 2rem;
     width: 100%;
-
+    @media only screen and (max-width:$bp-small) {
+        margin: 6rem 0;
+    }
     &_img{
         width: 100%;
     height: 100%;
@@ -756,6 +762,9 @@ header{
     grid-template-columns: repeat(11,1fr);
     grid-template-rows: repeat(8,1fr);
     grid-gap: 1rem;
+    @media only screen and (max-width:$bp-small) {
+        height: 65vh;
+    }
 }
 .col1{
     background-color: #EA384D;
@@ -810,10 +819,15 @@ header{
         flex-direction: row;
         flex: 1;
         width: 100%;
+        @media only screen and (max-width:$bp-small) {
+            flex-direction: column;
+        }
         &_sec1{
             width: 50%;
            // background-color: rgb(225, 65, 65);
-            
+           @media only screen and (max-width:$bp-small) {
+            width:100%;
+        }
         }
         &_credit{
             width: 50%;
@@ -822,6 +836,10 @@ header{
             display: flex;
             align-items: center;
             justify-content: center;
+            @media only screen and (max-width:$bp-small) {
+                width:100%;
+                margin-top: 4rem;
+            }
             &_text{
                 position: relative;
                 display: flex;
@@ -831,6 +849,9 @@ header{
                 padding: .5rem 1rem;
                 margin: 1.5rem;
                 text-align: center;
+                @media only screen and (max-width:$bp-small) {
+                    padding: .8rem 1rem;
+                }
                 &::before{
                     content: " ";
                     width: 70%;
@@ -838,6 +859,7 @@ header{
                     background-color: rgb(80, 80, 80);
                     position: absolute;
                     top: 0;
+
                 }
             }
         }

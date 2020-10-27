@@ -405,19 +405,32 @@ header {
   margin: 1rem 0rem;
   background-image: linear-gradient(rgba(234, 56, 77, 0.93), rgba(234, 77, 56, 0.93)), url(../img/banner.jpg);
   padding: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .faculty {
+      width: 100%; } }
   .faculty_base {
     display: flex;
     flex-direction: row; }
+    @media only screen and (max-width: 37.5em) {
+      .faculty_base {
+        flex-direction: column;
+        width: 100%; } }
   .faculty_contact {
     display: flex;
     width: 50%;
     flex-direction: column;
     padding: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .faculty_contact {
+        width: 100%; } }
     .faculty_contact_item {
       display: flex;
       flex-direction: row;
       margin: 1.5rem;
       align-items: center; }
+      @media only screen and (max-width: 37.5em) {
+        .faculty_contact_item {
+          width: 100%; } }
       .faculty_contact_item_svg {
         width: 5rem;
         height: 5rem;
@@ -433,6 +446,9 @@ header {
     flex-direction: column;
     justify-content: center;
     padding: 3rem; }
+    @media only screen and (max-width: 37.5em) {
+      .faculty_container {
+        width: 100%; } }
   .faculty_item {
     box-shadow: 0 0.1rem 1.3rem rgba(0, 0, 0, 0.1);
     padding: 2rem;
@@ -521,6 +537,10 @@ header {
   @media only screen and (max-width: 37.5em) {
     .comments {
       padding: 3rem 1rem; } }
+  @media only screen and (max-width: 31.25rem) {
+    .comments {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, min-content); } }
   .comments_item {
     overflow: hidden;
     position: relative;
@@ -587,6 +607,10 @@ header {
   position: absolute;
   top: 0;
   left: -15%; }
+  @media only screen and (max-width: 31.25rem) {
+    .commentHead {
+      position: relative;
+      left: 0; } }
 
 .commentcol1 {
   grid-row: 1/span 2;
@@ -612,6 +636,9 @@ header {
   margin: 12rem 0;
   padding: 4rem 2rem;
   width: 100%; }
+  @media only screen and (max-width: 37.5em) {
+    .gallery {
+      margin: 6rem 0; } }
   .gallery_img {
     width: 100%;
     height: 100%;
@@ -627,6 +654,9 @@ header {
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(8, 1fr);
   grid-gap: 1rem; }
+  @media only screen and (max-width: 37.5em) {
+    .gallerytable {
+      height: 65vh; } }
 
 .col1 {
   background-color: #EA384D;
@@ -678,13 +708,23 @@ header {
     flex-direction: row;
     flex: 1;
     width: 100%; }
+    @media only screen and (max-width: 37.5em) {
+      .footer_holder {
+        flex-direction: column; } }
     .footer_holder_sec1 {
       width: 50%; }
+      @media only screen and (max-width: 37.5em) {
+        .footer_holder_sec1 {
+          width: 100%; } }
     .footer_holder_credit {
       width: 50%;
       display: flex;
       align-items: center;
       justify-content: center; }
+      @media only screen and (max-width: 37.5em) {
+        .footer_holder_credit {
+          width: 100%;
+          margin-top: 4rem; } }
       .footer_holder_credit_text {
         position: relative;
         display: flex;
@@ -694,6 +734,9 @@ header {
         padding: .5rem 1rem;
         margin: 1.5rem;
         text-align: center; }
+        @media only screen and (max-width: 37.5em) {
+          .footer_holder_credit_text {
+            padding: .8rem 1rem; } }
         .footer_holder_credit_text::before {
           content: " ";
           width: 70%;
@@ -829,7 +872,8 @@ h4 {
       padding-left: 5rem; } }
   @media only screen and (max-width: 37.5em) {
     h4 {
-      padding-left: 3rem; } }
+      padding-left: 3rem;
+      margin-bottom: 1rem; } }
   h4:hover {
     text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
     color: #EA384D; }
