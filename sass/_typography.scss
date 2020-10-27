@@ -657,8 +657,10 @@ header{
                 height: 2px;
                 background-color: rgb(80, 80, 80);
                 position: absolute;
+                
             }
             &_item{
+                cursor: pointer;
                 font-size: 1.4rem;
                 padding: .5rem 1rem;
                 margin: 1rem;
