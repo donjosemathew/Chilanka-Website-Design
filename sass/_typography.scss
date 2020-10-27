@@ -1,3 +1,10 @@
+
+$bp-largest:75em ;  // 1200px
+$bp-large: 68.75em; //1100px\
+$bp-medium: 56.25em; //900px
+$bp-small: 37.5em; //600px
+$bp-smallest:31.25rem; //500px
+
 *{
     padding: 0;
     margin: 0;
@@ -11,7 +18,15 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%;
-
+    @media only screen and (max-width:$bp-largest) {
+        font-size: 58.5%;
+    }
+    @media only screen and (max-width:$bp-large) {
+        font-size: 55.5%;
+    }
+    @media only screen and (max-width:$bp-medium) {
+        font-size: 50.5%;
+    }
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -23,6 +38,8 @@ body{
 .container{
     overflow: hidden;
 }
+
+
 /////////////
 header
 ////////////
@@ -34,6 +51,8 @@ header{
     flex-direction: row;
     height: 100vh;
     background-color: #ffffff;
+
+    
 }
 .sec1{
     width: 45%;
@@ -89,6 +108,7 @@ header{
         background-color: #EA384D;
         }
     }
+   
     
 }
 .circle{
@@ -129,9 +149,6 @@ header{
 //////////////////////////
 /////////////About
 .about{
-    
-    
-    padding: 10rem 0;
     position: relative;
     background-color: #ffffff;
     width: 100%;
@@ -140,21 +157,21 @@ header{
     margin: 1rem;
     &_sec1{
         width: 40%;
-        background-color: #ffffff;
-       
-        
-        
+        background-color: #ffffff;   
     }
     &_sec2{
         position: relative;
         width: 60%;
         background-color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &_img1{
             width: 25rem;
             border-radius: .5rem;
             position: absolute;
             top: 8rem;
-            left: 20%;
+            left: 25%;
             //box-shadow: 0 0 .5rem rgba($color: #000000, $alpha: .4);
             z-index: 1;
             transition: all .3s;
@@ -170,7 +187,7 @@ header{
             border-radius: .5rem;
             position: absolute;
             top: 2rem;
-            right: 19rem;
+            right: 14rem;
             z-index: 1;
             transition: all .3s;
             &:hover{
@@ -184,7 +201,7 @@ header{
             width: 20rem;
             position: absolute;
            top: 30rem;
-           left: 3rem;
+           left: 7rem;
             //z-index: -2;
         }
         
@@ -227,6 +244,10 @@ header{
         font-family: 'Lato', sans-serif;
         padding-left: 9rem;
     }
+    @media only screen and (max-width:$bp-medium) {
+        padding: 6rem 0;
+        margin: .5rem;
+    }
 }
 ///////////////////////////////
 //////////features
@@ -250,6 +271,9 @@ header{
         flex-direction: row;
         justify-content: space-between;
         align-content: space-between;
+        @media only screen and (max-width:$bp-medium) {
+            margin: 2.5rem 4rem;
+        }
     }
     &_svg{
         width: 10rem;
@@ -273,8 +297,12 @@ header{
         transition: all .3s;
         background-size: cover;
         background-position: top;
+
         &:not(:last-child){
             margin-right: 4rem;
+            @media only screen and (max-width:$bp-medium) {
+                margin-right: 2rem;
+            }
         }
         &:hover{
             box-shadow: 0 .1rem 1rem rgba($color: #000000, $alpha: .10);
@@ -348,6 +376,7 @@ header{
         border-top-left-radius: 4rem;
         border-bottom-right-radius: 4rem;
         margin: 2rem;
+        
     }
     &_container{
        display: flex;
@@ -461,6 +490,10 @@ header{
     grid-template-rows: 1fr 1fr;
     margin: 5rem 6rem;
     border-top-left-radius: 1rem;
+    @media only screen and (max-width:$bp-medium) {
+        margin: 5rem 3rem;
+        padding: 1.5rem;
+    }
     &_item{
         overflow: hidden;
         position: relative;
@@ -475,6 +508,10 @@ header{
         justify-self: center;
         flex-direction: row;
         transition: all .2s;
+        @media only screen and (max-width:$bp-medium) {
+            margin: 1.5rem 0;
+            padding: 1.8rem;
+        }
         &:hover{
             transform: scale(1.02);
             box-shadow: 0 .1rem 1.4rem rgba(0, 0, 0, 0.15);
@@ -499,10 +536,15 @@ header{
             flex-direction: column;
             justify-content: center;
             padding-left: 2rem;
+            @media only screen and (max-width:$bp-medium) {
+                padding-left: 1.5rem;
+            }
         }
         
     }
-    
+    @media only screen and (max-width:$bp-large) {
+        margin: 5rem 4rem;
+    }
 }
 .commentHead{
     position: absolute;

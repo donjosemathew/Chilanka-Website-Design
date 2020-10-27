@@ -27,6 +27,15 @@ Grey dark 3: #999
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 58.5%; } }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 55.5%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50.5%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -126,7 +135,6 @@ header {
   height: 12rem; }
 
 .about {
-  padding: 10rem 0;
   position: relative;
   background-color: #ffffff;
   width: 100%;
@@ -139,13 +147,16 @@ header {
   .about_sec2 {
     position: relative;
     width: 60%;
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
     .about_sec2_img1 {
       width: 25rem;
       border-radius: .5rem;
       position: absolute;
       top: 8rem;
-      left: 20%;
+      left: 25%;
       z-index: 1;
       transition: all .3s; }
       .about_sec2_img1:hover {
@@ -158,7 +169,7 @@ header {
       border-radius: .5rem;
       position: absolute;
       top: 2rem;
-      right: 19rem;
+      right: 14rem;
       z-index: 1;
       transition: all .3s; }
       .about_sec2_img2:hover {
@@ -170,7 +181,7 @@ header {
       width: 20rem;
       position: absolute;
       top: 30rem;
-      left: 3rem; }
+      left: 7rem; }
   .about_btn {
     border: none;
     outline: none;
@@ -204,6 +215,10 @@ header {
     line-height: 2.5rem;
     font-family: 'Lato', sans-serif;
     padding-left: 9rem; }
+  @media only screen and (max-width: 56.25em) {
+    .about {
+      padding: 6rem 0;
+      margin: .5rem; } }
 
 .features {
   flex-grow: 0;
@@ -219,6 +234,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between; }
+    @media only screen and (max-width: 56.25em) {
+      .features .features_box {
+        margin: 2.5rem 4rem; } }
   .features_svg {
     width: 10rem;
     height: 7rem;
@@ -242,6 +260,9 @@ header {
     background-position: top; }
     .features_item:not(:last-child) {
       margin-right: 4rem; }
+      @media only screen and (max-width: 56.25em) {
+        .features_item:not(:last-child) {
+          margin-right: 2rem; } }
     .features_item:hover {
       box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
       transform: scale(1.01) translateY(1rem) rotate(10deg); }
@@ -382,6 +403,10 @@ header {
   grid-template-rows: 1fr 1fr;
   margin: 5rem 6rem;
   border-top-left-radius: 1rem; }
+  @media only screen and (max-width: 56.25em) {
+    .comments {
+      margin: 5rem 3rem;
+      padding: 1.5rem; } }
   .comments_item {
     overflow: hidden;
     position: relative;
@@ -396,6 +421,10 @@ header {
     justify-self: center;
     flex-direction: row;
     transition: all .2s; }
+    @media only screen and (max-width: 56.25em) {
+      .comments_item {
+        margin: 1.5rem 0;
+        padding: 1.8rem; } }
     .comments_item:hover {
       transform: scale(1.02);
       box-shadow: 0 0.1rem 1.4rem rgba(0, 0, 0, 0.15); }
@@ -414,6 +443,12 @@ header {
       flex-direction: column;
       justify-content: center;
       padding-left: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .comments_item_box {
+          padding-left: 1.5rem; } }
+  @media only screen and (max-width: 68.75em) {
+    .comments {
+      margin: 5rem 4rem; } }
 
 .commentHead {
   position: absolute;
