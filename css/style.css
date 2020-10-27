@@ -499,6 +499,12 @@ header {
   grid-row: 6/span 3;
   grid-column: 4/span 4; }
 
+.footer {
+  width: 100%;
+  background-color: #2b2b2b; }
+  .footer_img {
+    width: 16rem; }
+
 @keyframes cardIn {
   0% {
     transform: translateX(-7rem);
