@@ -427,6 +427,60 @@ header{
         right: 0;
         font-family: 'Lato', sans-serif;
 }
+
+////////////////////////////
+///////////Gallery
+.gallery{
+    padding: 4rem 2rem;
+    width: 100%;
+    &_img{
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+}
+.gallerytable{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows: repeat(8,1fr);
+    grid-gap: 1rem;
+}
+.col1{
+    background-color: royalblue;
+    grid-row: 1/span 8;
+    grid-column: 1/span 3;
+}
+.col2{
+    background-color: rgb(225, 65, 65);
+    grid-row: 1/span 2;
+    grid-column: 4/span 2;
+}
+.col3{
+    background-color: royalblue;
+    grid-row: 1/span 2;
+    grid-column: 6/span 2;
+}
+.col4{
+    background-color: royalblue;
+    grid-row: 1/span 5;
+    grid-column: 8/span 4;
+}
+.col5{
+    background-color: royalblue;
+    grid-row: 3/span 3;
+    grid-column: 4/span 4;
+}
+.col6{
+    background-color: royalblue;
+    grid-row: 6/span 3;
+    grid-column: 8/span 4;
+}
+.col7{
+    background-color: royalblue;
+    grid-row: 6/span 3;
+    grid-column: 4/span 4;
+}
+
 /////////////////////////////
 /////////////animation
 @keyframes cardIn{
