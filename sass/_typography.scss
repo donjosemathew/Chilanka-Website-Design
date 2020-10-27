@@ -31,6 +31,12 @@ html{
     @media only screen and (max-width:$bp-abovesmall) {
         font-size: 48.5%;
     }
+    @media only screen and (max-width:$bp-small) {
+        font-size: 46.5%;
+    }
+    @media only screen and (max-width:$bp-smallest) {
+        font-size: 40.5%;
+    }
 }
 body{
     font-family: 'Lato', sans-serif;
@@ -58,6 +64,12 @@ header{
     @media only screen and (max-width:$bp-abovesmall) {
         height: 90vh;
     }
+    @media only screen and (max-width:$bp-small) {
+        height: 80vh;
+    }
+    @media only screen and (max-width:$bp-smallest) {
+        height: 60vh;
+    }
     
 }
 .sec1{
@@ -79,6 +91,9 @@ header{
         margin-bottom: -1rem;
         @media only screen and (max-width:$bp-abovesmall) {
             left: 2rem;
+        }
+        @media only screen and (max-width:$bp-small) {
+            height: 50rem;
         }
     }
 }
@@ -166,7 +181,10 @@ header{
     &_sec1{
         width: 40%;
         background-color: #ffffff; 
-        
+        @media only screen and (max-width:$bp-smallest) {
+            width: 100%;
+            padding: 2rem;
+        }
     }
     &_sec2{
         position: relative;
@@ -175,15 +193,23 @@ header{
         display: flex;
         align-items: center;
         justify-content: center;
+        @media only screen and (max-width:$bp-smallest) {
+            width: 90%;
+            height:40vh;
+        }
         &_img1{
             width: 25rem;
             border-radius: .5rem;
             position: absolute;
             top: 8rem;
-            left: 25%;
+            left: 35%;
             //box-shadow: 0 0 .5rem rgba($color: #000000, $alpha: .4);
             z-index: 1;
             transition: all .3s;
+            @media only screen and (max-width:$bp-smallest) {
+                transform: scale(.8);
+                top: 3rem;
+            }
             &:hover{
                 padding: 1rem;
                 border: solid 1rem  #EA384D;
@@ -205,6 +231,11 @@ header{
                 z-index: 10;
                 border-radius: .5rem;
             }
+            @media only screen and (max-width:$bp-smallest) {
+                right: 10rem;
+                top: 1rem;
+                transform: scale(.8);
+            }
         }
         &_img3{
             width: 20rem;
@@ -212,6 +243,11 @@ header{
            top: 30rem;
            left: 7rem;
             //z-index: -2;
+            @media only screen and (max-width:$bp-smallest) {
+                left: 20rem;
+                transform: scale(.8);
+                top: 20rem;
+            }
         }
         
     }
@@ -246,6 +282,10 @@ header{
         @media only screen and (max-width:$bp-medium) {
             padding-left: 5rem;
         }  
+
+        @media only screen and (max-width:$bp-small) {
+            padding-left: 3rem;
+        }
     }
     &_text{
         color: #757575;
@@ -258,10 +298,20 @@ header{
         @media only screen and (max-width:$bp-medium) {
             padding-left: 5rem;
         }
+        @media only screen and (max-width:$bp-small) {
+            padding-left: 3rem;
+        }
     }
     @media only screen and (max-width:$bp-medium) {
         padding: 6rem 0;
         margin: .5rem;
+    }
+    @media only screen and (max-width:$bp-small) {
+        
+        margin: .35rem;
+    }
+    @media only screen and (max-width:$bp-smallest) {
+        flex-direction: column;
     }
 }
 ///////////////////////////////
@@ -292,6 +342,14 @@ header{
         @media only screen and (max-width:$bp-abovesmall) {
             margin: 2.5rem 2rem;
         }
+        @media only screen and (max-width:$bp-small) {
+            margin: 2.5rem 1.5rem;
+        }
+        @media only screen and (max-width:$bp-smallest) {
+            flex-direction: column;
+            width: 100;
+            align-items: center;
+        }
     }
     &_svg{
         width: 10rem;
@@ -300,6 +358,14 @@ header{
         @media only screen and (max-width:$bp-abovesmall) {
             width: 6rem;
            height: 6rem;
+        }
+        @media only screen and (max-width:$bp-small) {
+            width: 5rem;
+           height: 5rem;
+        }
+        @media only screen and (max-width:$bp-smallest) {
+            width: 10rem;
+        height: 7rem;
         }
     }
     &_item{
@@ -321,6 +387,14 @@ header{
         background-position: top;
         @media only screen and (max-width:$bp-abovesmall) {
             padding: 4rem 2rem;
+        }
+        @media only screen and (max-width:$bp-small) {
+            padding: 3rem 1rem;
+        }
+        @media only screen and (max-width:$bp-smallest) {
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+            width:90%;
         }
         &:not(:last-child){
             margin-right: 4rem;
@@ -346,7 +420,9 @@ header{
         text-align: center;
         line-height: 22px;
         margin-top: 1rem;
-        
+        @media only screen and (max-width:$bp-smallest) {
+            font-size: 2rem;
+        }
         
     }
 }
@@ -377,9 +453,17 @@ header{
 .faculty{
     margin: 1rem 0rem;  
     background-image: linear-gradient(rgba(#EA384D, .93), rgba(#ea4d38, .93)), url(../img/banner.jpg);
+    @media only screen and (max-width:$bp-small) {
+        width: 100%;
+    }
     &_base{
         display: flex;
         flex-direction: row;
+        @media only screen and (max-width:$bp-small) {
+            flex-direction: column;
+            width: 100%;
+        }
+
     }
     &_contact{
         display: flex;
@@ -391,11 +475,16 @@ header{
             flex-direction: row;
             margin: 1.5rem;
             align-items: center;
-            
+            @media only screen and (max-width:$bp-small) {
+                width: 100%;
+            }
             &_svg{
                 width:5rem;
                 height: 5rem;
                 fill:  #ffffff;
+        }
+        @media only screen and (max-width:$bp-small) {
+            width: 100%;
         }
     }
     }
@@ -425,6 +514,10 @@ header{
         &:not(:last-child){
             margin-bottom: 4rem;
         }
+        @media only screen and (max-width:$bp-small) {
+            flex-direction: column;
+        }
+       
         &_img{
             width: 13rem;
             height: 13rem;
@@ -522,6 +615,17 @@ header{
         margin: 5rem 3rem;
         padding: 1.5rem;
     }
+    @media only screen and (max-width:$bp-abovesmall) {
+        margin: 5rem 1.5rem;
+        padding: 1.5rem;
+    }
+    @media only screen and (max-width:$bp-small) {
+        padding: 3rem 1rem;
+    }
+    @media only screen and (max-width:$bp-smallest) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, min-content);
+    }
     &_item{
         overflow: hidden;
         position: relative;
@@ -545,6 +649,16 @@ header{
             margin: 1.5rem 0;
             padding: 1.8rem;
             width: 90%;
+        }
+        @media only screen and (max-width:$bp-abovesmall) {
+            margin: 1.3rem 0;
+            padding: 1.5rem;
+            width: 98%;
+        }
+        @media only screen and (max-width:$bp-small) {
+            margin: 1.1rem 0;
+            padding: 1.3rem;
+            flex-direction: column;
         }
         &:hover{
             transform: scale(1.02);
@@ -579,12 +693,19 @@ header{
     @media only screen and (max-width:$bp-large) {
         margin: 5rem 4rem;
     }
+    @media only screen and (max-width:$bp-small) {
+        margin: 5rem 2.5rem;
+    }
 }
 .commentHead{
     position: absolute;
     top: 0;
     left: -15%;
- 
+    @media only screen and (max-width:$bp-smallest) {
+        position: relative;
+       // padding-left: 3rem;
+        left: 0;
+    }
 }
 .commentcol1{
     grid-row: 1/span 2;

@@ -33,6 +33,9 @@ h5{
     @media only screen and (max-width:$bp-abovesmall) {
         font-size: 1.8rem;
     }
+    @media only screen and (max-width:$bp-smallest) {
+        font-size: 2rem;
+    }
     
 }
 h4{
@@ -48,6 +51,9 @@ h4{
     padding-left: 9rem;
     @media only screen and (max-width:$bp-medium) {
         padding-left: 5rem;
+    }
+    @media only screen and (max-width:$bp-small) {
+        padding-left: 3rem;
     }
     &:hover{
         text-shadow: 0 0 .6rem rgba($color: #000000, $alpha: .2);

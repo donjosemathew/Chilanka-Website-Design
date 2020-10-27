@@ -39,6 +39,12 @@ html {
   @media only screen and (max-width: 45.43em) {
     html {
       font-size: 48.5%; } }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 46.5%; } }
+  @media only screen and (max-width: 31.25rem) {
+    html {
+      font-size: 40.5%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -61,6 +67,12 @@ header {
   @media only screen and (max-width: 45.43em) {
     .headercontainer {
       height: 90vh; } }
+  @media only screen and (max-width: 37.5em) {
+    .headercontainer {
+      height: 80vh; } }
+  @media only screen and (max-width: 31.25rem) {
+    .headercontainer {
+      height: 60vh; } }
 
 .sec1 {
   width: 45%;
@@ -79,6 +91,9 @@ header {
     @media only screen and (max-width: 45.43em) {
       .sec1_img {
         left: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .sec1_img {
+        height: 50rem; } }
 
 .sec2 {
   background-color: #ffffff;
@@ -153,6 +168,10 @@ header {
   .about_sec1 {
     width: 40%;
     background-color: #ffffff; }
+    @media only screen and (max-width: 31.25rem) {
+      .about_sec1 {
+        width: 100%;
+        padding: 2rem; } }
   .about_sec2 {
     position: relative;
     width: 60%;
@@ -160,14 +179,22 @@ header {
     display: flex;
     align-items: center;
     justify-content: center; }
+    @media only screen and (max-width: 31.25rem) {
+      .about_sec2 {
+        width: 90%;
+        height: 40vh; } }
     .about_sec2_img1 {
       width: 25rem;
       border-radius: .5rem;
       position: absolute;
       top: 8rem;
-      left: 25%;
+      left: 35%;
       z-index: 1;
       transition: all .3s; }
+      @media only screen and (max-width: 31.25rem) {
+        .about_sec2_img1 {
+          transform: scale(0.8);
+          top: 3rem; } }
       .about_sec2_img1:hover {
         padding: 1rem;
         border: solid 1rem  #EA384D;
@@ -186,11 +213,21 @@ header {
         border: solid 1rem  #EA384D;
         z-index: 10;
         border-radius: .5rem; }
+      @media only screen and (max-width: 31.25rem) {
+        .about_sec2_img2 {
+          right: 10rem;
+          top: 1rem;
+          transform: scale(0.8); } }
     .about_sec2_img3 {
       width: 20rem;
       position: absolute;
       top: 30rem;
       left: 7rem; }
+      @media only screen and (max-width: 31.25rem) {
+        .about_sec2_img3 {
+          left: 20rem;
+          transform: scale(0.8);
+          top: 20rem; } }
   .about_btn {
     border: none;
     outline: none;
@@ -219,6 +256,9 @@ header {
     @media only screen and (max-width: 56.25em) {
       .about_title {
         padding-left: 5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about_title {
+        padding-left: 3rem; } }
   .about_text {
     color: #757575;
     font-weight: 300;
@@ -230,10 +270,19 @@ header {
     @media only screen and (max-width: 56.25em) {
       .about_text {
         padding-left: 5rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .about_text {
+        padding-left: 3rem; } }
   @media only screen and (max-width: 56.25em) {
     .about {
       padding: 6rem 0;
       margin: .5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      margin: .35rem; } }
+  @media only screen and (max-width: 31.25rem) {
+    .about {
+      flex-direction: column; } }
 
 .features {
   flex-grow: 0;
@@ -255,6 +304,14 @@ header {
     @media only screen and (max-width: 45.43em) {
       .features .features_box {
         margin: 2.5rem 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .features .features_box {
+        margin: 2.5rem 1.5rem; } }
+    @media only screen and (max-width: 31.25rem) {
+      .features .features_box {
+        flex-direction: column;
+        width: 100;
+        align-items: center; } }
   .features_svg {
     width: 10rem;
     height: 7rem;
@@ -263,6 +320,14 @@ header {
       .features_svg {
         width: 6rem;
         height: 6rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .features_svg {
+        width: 5rem;
+        height: 5rem; } }
+    @media only screen and (max-width: 31.25rem) {
+      .features_svg {
+        width: 10rem;
+        height: 7rem; } }
   .features_item {
     background-image: linear-gradient(rgba(234, 56, 77, 0.93), rgba(234, 77, 56, 0.93)), url(../img/banner.jpg);
     animation: cardIn 1s ease-in;
@@ -280,6 +345,17 @@ header {
     transition: all .3s;
     background-size: cover;
     background-position: top; }
+    @media only screen and (max-width: 45.43em) {
+      .features_item {
+        padding: 4rem 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .features_item {
+        padding: 3rem 1rem; } }
+    @media only screen and (max-width: 31.25rem) {
+      .features_item {
+        padding: 4rem 2rem;
+        margin-bottom: 2rem;
+        width: 90%; } }
     .features_item:not(:last-child) {
       margin-right: 4rem; }
       @media only screen and (max-width: 56.25em) {
@@ -301,6 +377,9 @@ header {
     text-align: center;
     line-height: 22px;
     margin-top: 1rem; }
+    @media only screen and (max-width: 31.25rem) {
+      .features_text {
+        font-size: 2rem; } }
 
 .icon-big {
   margin: auto;
@@ -363,6 +442,9 @@ header {
     flex-direction: row; }
     .faculty_item:not(:last-child) {
       margin-bottom: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .faculty_item {
+        flex-direction: column; } }
     .faculty_item_img {
       width: 13rem;
       height: 13rem;
@@ -432,6 +514,13 @@ header {
     .comments {
       margin: 5rem 3rem;
       padding: 1.5rem; } }
+  @media only screen and (max-width: 45.43em) {
+    .comments {
+      margin: 5rem 1.5rem;
+      padding: 1.5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .comments {
+      padding: 3rem 1rem; } }
   .comments_item {
     overflow: hidden;
     position: relative;
@@ -456,6 +545,16 @@ header {
         margin: 1.5rem 0;
         padding: 1.8rem;
         width: 90%; } }
+    @media only screen and (max-width: 45.43em) {
+      .comments_item {
+        margin: 1.3rem 0;
+        padding: 1.5rem;
+        width: 98%; } }
+    @media only screen and (max-width: 37.5em) {
+      .comments_item {
+        margin: 1.1rem 0;
+        padding: 1.3rem;
+        flex-direction: column; } }
     .comments_item:hover {
       transform: scale(1.02);
       box-shadow: 0 0.1rem 1.4rem rgba(0, 0, 0, 0.15); }
@@ -480,6 +579,9 @@ header {
   @media only screen and (max-width: 68.75em) {
     .comments {
       margin: 5rem 4rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .comments {
+      margin: 5rem 2.5rem; } }
 
 .commentHead {
   position: absolute;
@@ -708,6 +810,9 @@ h5 {
   @media only screen and (max-width: 45.43em) {
     h5 {
       font-size: 1.8rem; } }
+  @media only screen and (max-width: 31.25rem) {
+    h5 {
+      font-size: 2rem; } }
 
 h4 {
   display: inline-block;
@@ -722,6 +827,9 @@ h4 {
   @media only screen and (max-width: 56.25em) {
     h4 {
       padding-left: 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    h4 {
+      padding-left: 3rem; } }
   h4:hover {
     text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
     color: #EA384D; }
