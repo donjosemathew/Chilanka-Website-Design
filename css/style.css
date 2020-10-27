@@ -126,7 +126,7 @@ header {
   height: 12rem; }
 
 .about {
-  height: 120vh;
+  height: 100vh;
   padding: 10rem 0;
   position: relative;
   background-color: #ffffff;
@@ -501,9 +501,23 @@ header {
 
 .footer {
   width: 100%;
-  background-color: #2b2b2b; }
+  background-color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  align-items: center; }
   .footer_img {
     width: 16rem; }
+  .footer_holder {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    width: 100%; }
+    .footer_holder_sec1 {
+      width: 50%;
+      background-color: #e14141; }
+      .footer_holder_sec1_nav {
+        list-style: none; }
 
 @keyframes cardIn {
   0% {
