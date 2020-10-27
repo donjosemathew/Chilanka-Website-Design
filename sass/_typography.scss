@@ -207,10 +207,6 @@ header{
     }
     &_img4{
         width: 100%;
-        position: absolute;
-       bottom: -10rem;
-       left: 0rem;
-        //z-index: -2;
     }
     &_title{
         color: #757575;
@@ -299,27 +295,76 @@ header{
     }
 }
 ////////////////////////
-///////////Testimonials
-
+///////////Testimonials/
+.icon-big{
+    margin: auto;
+    fill: #ffffff;
+    width: 2.8rem;
+    height: 2.8rem;
+    cursor: pointer;
+}
+.icon-holder{
+        background-color: transparent;
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: .21rem solid #ffffff;
+        transition: all .2s;
+        &:hover{
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 1);
+        }
+}
 .faculty{
-  
-    
+    margin: 1rem 0rem;  
     background-image: linear-gradient(rgba(#EA384D, .93), rgba(#ea4d38, .93)), url(../img/banner.jpg);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-   // background-color: blueviolet;
+    &_base{
+        display: flex;
+        flex-direction: row;
+    }
+    &_contact{
+        display: flex;
+        width: 40%;
+        flex-direction: column;
+        padding: 4rem;
+        &_item{
+            display: flex;
+            flex-direction: row;
+            &_svg{
+                width:5rem;
+                height: 5rem;
+                fill:  #ffffff;
+        }
+    }
+    }
+    &_img{
+        width: 28rem;
+        border-top-left-radius: 4rem;
+        border-bottom-right-radius: 4rem;
+        margin: 2rem;
+    }
+    &_container{
+       display: flex;
+        width: 50%;
+       flex-direction: column;
+       justify-content: center;
+       padding: 3rem;
+   }
     padding: 3rem;
     &_item{
         box-shadow: 0 .1rem 1.3rem rgba(0, 0, 0, 0.1);
         padding: 2rem;
-        width: 50%;
+       // width: 50%;
         background-color: #ffff;
         display: flex;
         border-radius: .5rem;
         flex-direction: row;
+        &:not(:last-child){
+            margin-bottom: 4rem;
+        }
         &_img{
             width: 13rem;
             height: 13rem;
@@ -344,11 +389,9 @@ header{
             word-spacing: .01rem;
         }
     }
-}
+} 
 .comments{
-    //background-image: linear-gradient(rgba(#EA384D, .93), rgba(#ea4d38, .93)), url(../img/2.jpg);
     padding: 2rem;
-    //background-color: rgb(241, 241, 241);
     background-position: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -431,15 +474,18 @@ header{
 ////////////////////////////
 ///////////Gallery
 .gallery{
+    margin: 5rem 0;
     padding: 4rem 2rem;
     width: 100%;
     &_img{
         width: 100%;
     height: 100%;
     object-fit: cover;
+    
     }
 }
 .gallerytable{
+    height: 85vh;
     display: grid;
     grid-template-columns: repeat(11,1fr);
     grid-template-rows: repeat(8,1fr);

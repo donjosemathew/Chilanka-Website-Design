@@ -65,7 +65,23 @@ h6{
 }
 
 .facultyhead{
+    margin-left: 0;
+    display: inline-block;
+    font-size: 3rem;
+   
+    color: #ffffff;
+    font-weight: 300;
+   // margin-top: 5rem;
+    word-spacing: .01rem; 
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    
 
+    &:hover{
+        text-shadow: 0 0 .6rem rgba($color: #000000, $alpha: .2);
+        color: #EA384D;
+        
+    }
 }
 q{
     font-size: 1.8rem;

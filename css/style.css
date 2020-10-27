@@ -188,10 +188,7 @@ header {
       letter-spacing: .8px;
       padding-bottom: 2px; }
   .about_img4 {
-    width: 100%;
-    position: absolute;
-    bottom: -10rem;
-    left: 0rem; }
+    width: 100%; }
   .about_title {
     color: #757575;
     font-weight: 400;
@@ -264,21 +261,44 @@ header {
     margin-top: 1rem; }
 
 .faculty {
+  margin: 1rem 0rem;
   background-image: linear-gradient(rgba(234, 56, 77, 0.93), rgba(234, 77, 56, 0.93)), url(../img/banner.jpg);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
   padding: 3rem; }
+  .faculty_base {
+    display: flex;
+    flex-direction: row; }
+  .faculty_contact {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    padding: 4rem; }
+    .faculty_contact_item {
+      display: flex;
+      flex-direction: row; }
+      .faculty_contact_item_svg {
+        width: 5rem;
+        height: 5rem;
+        fill: #ffffff; }
+  .faculty_img {
+    width: 28rem;
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    margin: 2rem; }
+  .faculty_container {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 3rem; }
   .faculty_item {
     box-shadow: 0 0.1rem 1.3rem rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    width: 50%;
     background-color: #ffff;
     display: flex;
     border-radius: .5rem;
     flex-direction: row; }
+    .faculty_item:not(:last-child) {
+      margin-bottom: 4rem; }
     .faculty_item_img {
       width: 13rem;
       height: 13rem;
@@ -366,6 +386,7 @@ header {
   font-family: 'Lato', sans-serif; }
 
 .gallery {
+  margin: 5rem 0;
   padding: 4rem 2rem;
   width: 100%; }
   .gallery_img {
@@ -374,6 +395,7 @@ header {
     object-fit: cover; }
 
 .gallerytable {
+  height: 85vh;
   display: grid;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(8, 1fr);
@@ -510,6 +532,19 @@ h6 {
   color: #EA384D;
   font-weight: 400;
   word-spacing: .01rem; }
+
+.facultyhead {
+  margin-left: 0;
+  display: inline-block;
+  font-size: 3rem;
+  color: #ffffff;
+  font-weight: 300;
+  word-spacing: .01rem;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif; }
+  .facultyhead:hover {
+    text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
+    color: #EA384D; }
 
 q {
   font-size: 1.8rem;
