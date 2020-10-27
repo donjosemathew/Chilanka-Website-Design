@@ -260,6 +260,26 @@ header {
     line-height: 22px;
     margin-top: 1rem; }
 
+.icon-big {
+  margin: auto;
+  fill: #ffffff;
+  width: 2.8rem;
+  height: 2.8rem;
+  cursor: pointer; }
+
+.icon-holder {
+  background-color: transparent;
+  width: 6.5rem;
+  height: 6.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: .21rem solid #ffffff;
+  transition: all .2s; }
+  .icon-holder:hover {
+    background-color: rgba(255, 255, 255, 0.2); }
+
 .faculty {
   margin: 1rem 0rem;
   background-image: linear-gradient(rgba(234, 56, 77, 0.93), rgba(234, 77, 56, 0.93)), url(../img/banner.jpg);
@@ -269,12 +289,14 @@ header {
     flex-direction: row; }
   .faculty_contact {
     display: flex;
-    width: 40%;
+    width: 50%;
     flex-direction: column;
     padding: 4rem; }
     .faculty_contact_item {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      margin: 1.5rem;
+      align-items: center; }
       .faculty_contact_item_svg {
         width: 5rem;
         height: 5rem;
@@ -318,6 +340,29 @@ header {
       color: #757575;
       font-weight: 400;
       word-spacing: .01rem; }
+
+.socialmedia {
+  padding: 4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: salmon; }
+  .socialmedia_item {
+    background-color: #ffffff;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem; }
+    .socialmedia_item_icon {
+      width: 2rem;
+      height: 2rem;
+      margin: 2rem;
+      fill: #EA384D; }
 
 .comments {
   padding: 2rem;
@@ -543,8 +588,18 @@ h6 {
   font-weight: 700;
   font-family: 'Lato', sans-serif; }
   .facultyhead:hover {
-    text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
-    color: #EA384D; }
+    text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2); }
+
+.faculty_contact_text {
+  font-size: 1.8rem;
+  margin-left: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  transition: all .2s;
+  cursor: pointer; }
+  .faculty_contact_text:hover {
+    letter-spacing: 1.5px;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.4); }
 
 q {
   font-size: 1.8rem;
