@@ -8,6 +8,9 @@ h1{
     margin-top: 2.5rem;
     margin-bottom: .2rem;
     animation: zoom 1.4s;
+    @media only screen and (max-width:$bp-extrasmallest) {
+        font-size: 5rem;
+    }
 }
 
 h2{
@@ -16,6 +19,9 @@ h2{
     font-weight: 300;
     word-spacing: .01rem;
     animation: sideInr 2s ease-in-out;
+    @media only screen and (max-width:$bp-extrasmallest) {
+        font-size: 2.2rem;
+    }
 }
 h3{
     font-size: 3.2rem;
@@ -23,7 +29,9 @@ h3{
     font-weight: 300;
     word-spacing: .01rem;
     animation: sideIn 2s ease-in-out;
-    
+    @media only screen and (max-width:$bp-extrasmallest) {
+        font-size: 2.2rem;
+    }
 }
 h5{
     font-size: 2rem;

@@ -5,6 +5,7 @@ $bp-medium: 56.25em; //900px
 $bp-abovesmall:45.43em;
 $bp-small: 37.5em; //600px
 $bp-smallest:31.25rem; //500px
+$bp-extrasmallest:25rem; //400px
 
 *{
     padding: 0;
@@ -36,6 +37,9 @@ html{
     }
     @media only screen and (max-width:$bp-smallest) {
         font-size: 40.5%;
+    }
+    @media only screen and (max-width:$bp-extrasmallest) {
+        font-size: 43.5%;
     }
 }
 body{
@@ -70,6 +74,10 @@ header{
     @media only screen and (max-width:$bp-smallest) {
         height: 60vh;
     }
+    @media only screen and (max-width:$bp-extrasmallest) {
+        font-size: 50vh;
+    }
+    
     
 }
 .sec1{
@@ -94,6 +102,11 @@ header{
         }
         @media only screen and (max-width:$bp-small) {
             height: 50rem;
+        }
+        @media only screen and (max-width:$bp-extrasmallest) {
+            left: 50%;
+            height: 40rem;
+            transform: translateX(-50%);
         }
     }
 }
@@ -149,12 +162,18 @@ header{
     height: 14rem;
     margin-left: -2rem;
     margin-top: -2rem;
+    @media only screen and (max-width:$bp-extrasmallest) {
+        transform: scale(.7);
+    }
 }
 .c2{
     left: 1rem;
     bottom: 1rem;
     width: 20rem;
     height: 20rem;
+    @media only screen and (max-width:$bp-extrasmallest) {
+        transform: scale(.7);
+    }
 }
 .c3{
     top: 40%;
@@ -162,12 +181,18 @@ header{
     margin-right: 1rem;
     width: 8rem;
     height: 8rem;
+    @media only screen and (max-width:$bp-extrasmallest) {
+        transform: scale(.7);
+    }
 }
 .c4{
     top: 25%;
     right: 40%;
     width: 12rem;
     height: 12rem;
+    @media only screen and (max-width:$bp-extrasmallest) {
+        transform: scale(.7);
+    }
 }
 //////////////////////////
 /////////////About
@@ -178,6 +203,7 @@ header{
     display: flex;
     flex-direction: row;
     margin: 1rem;
+    
     &_sec1{
         width: 40%;
         background-color: #ffffff; 
@@ -197,6 +223,9 @@ header{
             width: 90%;
             height:40vh;
         }
+        @media only screen and (max-width:$bp-extrasmallest) {
+            height:50vh;
+        }
         &_img1{
             width: 25rem;
             border-radius: .5rem;
@@ -210,6 +239,12 @@ header{
                 transform: scale(.8);
                 top: 3rem;
             }
+            @media only screen and (max-width:$bp-extrasmallest) {
+                left: 50%;
+                height: 40rem;
+                transform: translateX(-50%) scale(.8);
+            }
+            
             &:hover{
                 padding: 1rem;
                 border: solid 1rem  #EA384D;
@@ -236,6 +271,10 @@ header{
                 top: 1rem;
                 transform: scale(.8);
             }
+            @media only screen and (max-width:$bp-extrasmallest) {
+                right: -25%;
+                transform: translateX(-50%) scale(.8);
+            }
         }
         &_img3{
             width: 20rem;
@@ -247,6 +286,11 @@ header{
                 left: 20rem;
                 transform: scale(.8);
                 top: 20rem;
+            }
+            @media only screen and (max-width:$bp-extrasmallest) {
+                right: -35%;
+                top: 24rem;
+                transform: translateX(-60%) scale(.8);
             }
         }
         
@@ -313,6 +357,7 @@ header{
     @media only screen and (max-width:$bp-smallest) {
         flex-direction: column;
     }
+
 }
 ///////////////////////////////
 //////////features
@@ -521,7 +566,11 @@ header{
         @media only screen and (max-width:$bp-small) {
             flex-direction: column;
         }
-       
+        @media only screen and (max-width:$bp-extrasmallest) {
+            margin: 1.1rem 0;
+            padding: 1.5rem;
+            flex-direction: row;
+        }
         &_img{
             width: 13rem;
             height: 13rem;
@@ -630,6 +679,9 @@ header{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, min-content);
     }
+    @media only screen and (max-width:$bp-extrasmallest) {
+        padding: 2rem;
+    }
     &_item{
         overflow: hidden;
         position: relative;
@@ -663,6 +715,11 @@ header{
             margin: 1.1rem 0;
             padding: 1.3rem;
             flex-direction: column;
+        }
+        @media only screen and (max-width:$bp-extrasmallest) {
+            margin: 1.1rem 0;
+            padding: 1.5rem;
+            flex-direction: row;
         }
         &:hover{
             transform: scale(1.02);
@@ -764,6 +821,9 @@ header{
     grid-gap: 1rem;
     @media only screen and (max-width:$bp-small) {
         height: 65vh;
+    }
+    @media only screen and (max-width:$bp-extrasmallest) {
+        height: 50vh;
     }
 }
 .col1{

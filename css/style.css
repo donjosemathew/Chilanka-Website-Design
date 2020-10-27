@@ -45,6 +45,9 @@ html {
   @media only screen and (max-width: 31.25rem) {
     html {
       font-size: 40.5%; } }
+  @media only screen and (max-width: 25rem) {
+    html {
+      font-size: 43.5%; } }
 
 body {
   font-family: 'Lato', sans-serif;
@@ -73,6 +76,9 @@ header {
   @media only screen and (max-width: 31.25rem) {
     .headercontainer {
       height: 60vh; } }
+  @media only screen and (max-width: 25rem) {
+    .headercontainer {
+      font-size: 50vh; } }
 
 .sec1 {
   width: 45%;
@@ -94,6 +100,11 @@ header {
     @media only screen and (max-width: 37.5em) {
       .sec1_img {
         height: 50rem; } }
+    @media only screen and (max-width: 25rem) {
+      .sec1_img {
+        left: 50%;
+        height: 40rem;
+        transform: translateX(-50%); } }
 
 .sec2 {
   background-color: #ffffff;
@@ -138,12 +149,18 @@ header {
   height: 14rem;
   margin-left: -2rem;
   margin-top: -2rem; }
+  @media only screen and (max-width: 25rem) {
+    .c1 {
+      transform: scale(0.7); } }
 
 .c2 {
   left: 1rem;
   bottom: 1rem;
   width: 20rem;
   height: 20rem; }
+  @media only screen and (max-width: 25rem) {
+    .c2 {
+      transform: scale(0.7); } }
 
 .c3 {
   top: 40%;
@@ -151,12 +168,18 @@ header {
   margin-right: 1rem;
   width: 8rem;
   height: 8rem; }
+  @media only screen and (max-width: 25rem) {
+    .c3 {
+      transform: scale(0.7); } }
 
 .c4 {
   top: 25%;
   right: 40%;
   width: 12rem;
   height: 12rem; }
+  @media only screen and (max-width: 25rem) {
+    .c4 {
+      transform: scale(0.7); } }
 
 .about {
   position: relative;
@@ -183,6 +206,9 @@ header {
       .about_sec2 {
         width: 90%;
         height: 40vh; } }
+    @media only screen and (max-width: 25rem) {
+      .about_sec2 {
+        height: 50vh; } }
     .about_sec2_img1 {
       width: 25rem;
       border-radius: .5rem;
@@ -195,6 +221,11 @@ header {
         .about_sec2_img1 {
           transform: scale(0.8);
           top: 3rem; } }
+      @media only screen and (max-width: 25rem) {
+        .about_sec2_img1 {
+          left: 50%;
+          height: 40rem;
+          transform: translateX(-50%) scale(0.8); } }
       .about_sec2_img1:hover {
         padding: 1rem;
         border: solid 1rem  #EA384D;
@@ -218,6 +249,10 @@ header {
           right: 10rem;
           top: 1rem;
           transform: scale(0.8); } }
+      @media only screen and (max-width: 25rem) {
+        .about_sec2_img2 {
+          right: -25%;
+          transform: translateX(-50%) scale(0.8); } }
     .about_sec2_img3 {
       width: 20rem;
       position: absolute;
@@ -228,6 +263,11 @@ header {
           left: 20rem;
           transform: scale(0.8);
           top: 20rem; } }
+      @media only screen and (max-width: 25rem) {
+        .about_sec2_img3 {
+          right: -35%;
+          top: 24rem;
+          transform: translateX(-60%) scale(0.8); } }
   .about_btn {
     border: none;
     outline: none;
@@ -461,6 +501,11 @@ header {
     @media only screen and (max-width: 37.5em) {
       .faculty_item {
         flex-direction: column; } }
+    @media only screen and (max-width: 25rem) {
+      .faculty_item {
+        margin: 1.1rem 0;
+        padding: 1.5rem;
+        flex-direction: row; } }
     .faculty_item_img {
       width: 13rem;
       height: 13rem;
@@ -541,6 +586,9 @@ header {
     .comments {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, min-content); } }
+  @media only screen and (max-width: 25rem) {
+    .comments {
+      padding: 2rem; } }
   .comments_item {
     overflow: hidden;
     position: relative;
@@ -575,6 +623,11 @@ header {
         margin: 1.1rem 0;
         padding: 1.3rem;
         flex-direction: column; } }
+    @media only screen and (max-width: 25rem) {
+      .comments_item {
+        margin: 1.1rem 0;
+        padding: 1.5rem;
+        flex-direction: row; } }
     .comments_item:hover {
       transform: scale(1.02);
       box-shadow: 0 0.1rem 1.4rem rgba(0, 0, 0, 0.15); }
@@ -657,6 +710,9 @@ header {
   @media only screen and (max-width: 37.5em) {
     .gallerytable {
       height: 65vh; } }
+  @media only screen and (max-width: 25rem) {
+    .gallerytable {
+      height: 50vh; } }
 
 .col1 {
   background-color: #EA384D;
@@ -830,6 +886,9 @@ h1 {
   margin-top: 2.5rem;
   margin-bottom: .2rem;
   animation: zoom 1.4s; }
+  @media only screen and (max-width: 25rem) {
+    h1 {
+      font-size: 5rem; } }
 
 h2 {
   font-size: 3.2rem;
@@ -837,6 +896,9 @@ h2 {
   font-weight: 300;
   word-spacing: .01rem;
   animation: sideInr 2s ease-in-out; }
+  @media only screen and (max-width: 25rem) {
+    h2 {
+      font-size: 2.2rem; } }
 
 h3 {
   font-size: 3.2rem;
@@ -844,6 +906,9 @@ h3 {
   font-weight: 300;
   word-spacing: .01rem;
   animation: sideIn 2s ease-in-out; }
+  @media only screen and (max-width: 25rem) {
+    h3 {
+      font-size: 2.2rem; } }
 
 h5 {
   font-size: 2rem;
