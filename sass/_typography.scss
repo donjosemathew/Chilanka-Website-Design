@@ -124,18 +124,23 @@ header{
         }
     }
 }
+.btnholder{
+    display: inline-block;
+    flex-grow: 0;
+}
 .sec2{
     
     background-color: #ffffff;
-    
-    width:55%;
     height: 100%;
+    width:55%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
     &_btn{
         outline: none;
+        
         border: none;
         font-family: 'Lato', sans-serif;
         padding: 1.4rem 5rem;
@@ -150,15 +155,19 @@ header{
         margin-top: 5rem;
         transition: all .3s;
         animation: comeUp 1.5s ease-in;
-        
-        
+        display: inline-block;
+        &:active{
+            outline: none;
+            border: none;
+        }
+        &:link{
+            outline: none;
+            border: none;
+        }
         &:hover{
         color: #ffffff;
         transform: scale(1.1);
         background-color: #EA384D;
-        }
-        &:hover * a{
-            color: #ffffff;
         }
     }
    

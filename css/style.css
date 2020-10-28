@@ -117,10 +117,14 @@ header {
         height: 40rem;
         transform: translateX(-50%); } }
 
+.btnholder {
+  display: inline-block;
+  flex-grow: 0; }
+
 .sec2 {
   background-color: #ffffff;
-  width: 55%;
   height: 100%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,13 +144,18 @@ header {
     box-shadow: 0 0 0.4rem rgba(0, 0, 0, 0.2);
     margin-top: 5rem;
     transition: all .3s;
-    animation: comeUp 1.5s ease-in; }
+    animation: comeUp 1.5s ease-in;
+    display: inline-block; }
+    .sec2_btn:active {
+      outline: none;
+      border: none; }
+    .sec2_btn:link {
+      outline: none;
+      border: none; }
     .sec2_btn:hover {
       color: #ffffff;
       transform: scale(1.1);
       background-color: #EA384D; }
-    .sec2_btn:hover * a {
-      color: #ffffff; }
 
 .circle {
   background-color: #ffff;
@@ -996,15 +1005,6 @@ q {
   font-weight: 300;
   word-spacing: .01rem;
   font-style: italic; }
-
-.btnlink {
-  text-decoration: none;
-  color: #EA384D;
-  display: inline-block;
-  margin: 0;
-  cursor: pointer; }
-  .btnlink:hover {
-    color: #ffffff; }
 
 .footerlink {
   text-decoration: none;
