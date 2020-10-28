@@ -17,7 +17,15 @@ Grey dark 3: #999
 */
 * {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  outline: none; }
+  * ::-moz-selection {
+    /* Code for Firefox */
+    color: #ffffff;
+    background: #D31027; }
+  * ::selection {
+    color: #ffffff;
+    background: #D31027; }
 
 *,
 ::after,
@@ -992,7 +1000,6 @@ q {
 .btnlink {
   text-decoration: none;
   color: #EA384D;
-  align-self: center;
   cursor: pointer; }
   .btnlink:hover {
     color: #ffffff; }
