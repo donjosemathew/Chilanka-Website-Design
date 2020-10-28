@@ -114,8 +114,8 @@ header {
         height: 50rem; } }
     @media only screen and (max-width: 27rem) {
       .sec1_img {
-        left: 50%;
-        height: 40rem;
+        left: 44%;
+        height: 44rem;
         transform: translateX(-50%); } }
 
 .btnholder {
@@ -420,6 +420,10 @@ header {
         padding: 4rem 2rem;
         margin-bottom: 2rem;
         width: 90%; } }
+    @media only screen and (max-width: 27rem) {
+      .features_item {
+        margin-bottom: 3rem;
+        width: 85%; } }
     .features_item:not(:last-child) {
       margin-right: 4rem; }
       @media only screen and (max-width: 56.25em) {
