@@ -91,8 +91,10 @@ header{
     clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
     background-image: linear-gradient(
         to right bottom,
-        rgba(#D31027, 1),
-        rgba(#EA384D, 1));
+        rgba(#D31027, .9),
+        rgba(#EA384D, .9)), url(../img/banner2.jpg);
+        background-position: center;
+        background-size: cover;
     &_img{
         position: absolute;
         bottom: 0;
