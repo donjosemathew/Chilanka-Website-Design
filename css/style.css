@@ -874,14 +874,13 @@ header {
     transform: translateY(0rem); } }
 
 body::-webkit-scrollbar {
-  width: 1em; }
+  width: 1.3em; }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); }
+  background-color: #f7f7f7; }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #ad0042;
-  outline: 1px solid #ad0042; }
+  background-image: linear-gradient(to right bottom, rgba(211, 16, 39, 0.9), rgba(234, 56, 77, 0.9)); }
 
 h1 {
   color: #EA384D;
@@ -937,7 +936,8 @@ h4 {
   word-spacing: .01rem;
   font-weight: 700;
   font-family: 'Lato', sans-serif;
-  padding-left: 9rem; }
+  padding-left: 9rem;
+  transition: all .2s; }
   @media only screen and (max-width: 56.25em) {
     h4 {
       padding-left: 5rem; } }
@@ -947,7 +947,7 @@ h4 {
       margin-bottom: 1rem; } }
   h4:hover {
     text-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
-    color: #EA384D; }
+    letter-spacing: 2px; }
 
 .h4style {
   margin-top: 1rem; }
