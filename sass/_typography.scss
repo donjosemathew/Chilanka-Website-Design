@@ -1043,6 +1043,7 @@ body::-webkit-scrollbar {
   body::-webkit-scrollbar-thumb {
     //background-color: rgb(173, 0, 66);
     //outline: 1px solid rgb(173, 0, 66);
+    border-radius: 2rem;
     background-image: linear-gradient(
         to right bottom,
         rgba(#D31027, .9),

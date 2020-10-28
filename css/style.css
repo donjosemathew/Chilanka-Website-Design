@@ -880,6 +880,7 @@ body::-webkit-scrollbar-track {
   background-color: #f7f7f7; }
 
 body::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
   background-image: linear-gradient(to right bottom, rgba(211, 16, 39, 0.9), rgba(234, 56, 77, 0.9)); }
 
 h1 {
