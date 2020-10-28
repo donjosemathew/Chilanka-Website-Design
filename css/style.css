@@ -45,7 +45,7 @@ html {
   @media only screen and (max-width: 31.25rem) {
     html {
       font-size: 40.5%; } }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     html {
       font-size: 43.5%; } }
 
@@ -76,7 +76,7 @@ header {
   @media only screen and (max-width: 31.25rem) {
     .headercontainer {
       height: 60vh; } }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     .headercontainer {
       font-size: 50vh; } }
 
@@ -100,7 +100,7 @@ header {
     @media only screen and (max-width: 37.5em) {
       .sec1_img {
         height: 50rem; } }
-    @media only screen and (max-width: 25rem) {
+    @media only screen and (max-width: 27rem) {
       .sec1_img {
         left: 50%;
         height: 40rem;
@@ -149,7 +149,7 @@ header {
   height: 14rem;
   margin-left: -2rem;
   margin-top: -2rem; }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     .c1 {
       transform: scale(0.7); } }
 
@@ -158,7 +158,7 @@ header {
   bottom: 1rem;
   width: 20rem;
   height: 20rem; }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     .c2 {
       transform: scale(0.7); } }
 
@@ -168,7 +168,7 @@ header {
   margin-right: 1rem;
   width: 8rem;
   height: 8rem; }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     .c3 {
       transform: scale(0.7); } }
 
@@ -177,7 +177,7 @@ header {
   right: 40%;
   width: 12rem;
   height: 12rem; }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     .c4 {
       transform: scale(0.7); } }
 
@@ -206,7 +206,7 @@ header {
       .about_sec2 {
         width: 90%;
         height: 40vh; } }
-    @media only screen and (max-width: 25rem) {
+    @media only screen and (max-width: 27rem) {
       .about_sec2 {
         height: 50vh; } }
     .about_sec2_img1 {
@@ -221,7 +221,7 @@ header {
         .about_sec2_img1 {
           transform: scale(0.8);
           top: 3rem; } }
-      @media only screen and (max-width: 25rem) {
+      @media only screen and (max-width: 27rem) {
         .about_sec2_img1 {
           left: 50%;
           height: 40rem;
@@ -249,7 +249,7 @@ header {
           right: 10rem;
           top: 1rem;
           transform: scale(0.8); } }
-      @media only screen and (max-width: 25rem) {
+      @media only screen and (max-width: 27rem) {
         .about_sec2_img2 {
           right: -25%;
           transform: translateX(-50%) scale(0.8); } }
@@ -263,7 +263,7 @@ header {
           left: 20rem;
           transform: scale(0.8);
           top: 20rem; } }
-      @media only screen and (max-width: 25rem) {
+      @media only screen and (max-width: 27rem) {
         .about_sec2_img3 {
           right: -35%;
           top: 24rem;
@@ -501,7 +501,7 @@ header {
     @media only screen and (max-width: 37.5em) {
       .faculty_item {
         flex-direction: column; } }
-    @media only screen and (max-width: 25rem) {
+    @media only screen and (max-width: 27rem) {
       .faculty_item {
         margin: 1.1rem 0;
         padding: 1.5rem;
@@ -586,7 +586,7 @@ header {
     .comments {
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, min-content); } }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     .comments {
       padding: 2rem; } }
   .comments_item {
@@ -623,7 +623,7 @@ header {
         margin: 1.1rem 0;
         padding: 1.3rem;
         flex-direction: column; } }
-    @media only screen and (max-width: 25rem) {
+    @media only screen and (max-width: 27rem) {
       .comments_item {
         margin: 1.1rem 0;
         padding: 1.5rem;
@@ -710,7 +710,7 @@ header {
   @media only screen and (max-width: 37.5em) {
     .gallerytable {
       height: 65vh; } }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     .gallerytable {
       height: 50vh; } }
 
@@ -886,7 +886,7 @@ h1 {
   margin-top: 2.5rem;
   margin-bottom: .2rem;
   animation: zoom 1.4s; }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     h1 {
       font-size: 5rem; } }
 
@@ -896,7 +896,7 @@ h2 {
   font-weight: 300;
   word-spacing: .01rem;
   animation: sideInr 2s ease-in-out; }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     h2 {
       font-size: 2.2rem; } }
 
@@ -906,7 +906,7 @@ h3 {
   font-weight: 300;
   word-spacing: .01rem;
   animation: sideIn 2s ease-in-out; }
-  @media only screen and (max-width: 25rem) {
+  @media only screen and (max-width: 27rem) {
     h3 {
       font-size: 2.2rem; } }
 
