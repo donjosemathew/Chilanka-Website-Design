@@ -850,6 +850,33 @@ header {
           transform: rotate(5deg) scale(1.2);
           border: 2px solid #fff; }
 
+.whatsapp {
+  position: fixed;
+  display: inline-block;
+  bottom: 5rem;
+  right: 3rem;
+  background-color: #ffffff;
+  box-shadow: 0 0 0.6rem rgba(78, 78, 78, 0.2);
+  padding: 1.7rem;
+  z-index: 1000;
+  border-radius: 50%; }
+  .whatsapp_icon {
+    width: 3.2rem;
+    height: 3.2rem;
+    fill: #4FCE5D; }
+  .whatsapp:hover {
+    animation: btnDance 1s ease-in-out infinite; }
+
+body::-webkit-scrollbar {
+  width: 1.3em; }
+
+body::-webkit-scrollbar-track {
+  background-color: #f7f7f7; }
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background-image: linear-gradient(to right bottom, rgba(211, 16, 39, 0.9), rgba(234, 56, 77, 0.9)); }
+
 @keyframes cardIn {
   0% {
     transform: translateX(-7rem);
@@ -894,15 +921,13 @@ header {
     opacity: 1;
     transform: translateY(0rem); } }
 
-body::-webkit-scrollbar {
-  width: 1.3em; }
-
-body::-webkit-scrollbar-track {
-  background-color: #f7f7f7; }
-
-body::-webkit-scrollbar-thumb {
-  border-radius: 2rem;
-  background-image: linear-gradient(to right bottom, rgba(211, 16, 39, 0.9), rgba(234, 56, 77, 0.9)); }
+@keyframes btnDance {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.2); }
+  100% {
+    transform: scale(1); } }
 
 h1 {
   color: #EA384D;
@@ -1013,11 +1038,3 @@ q {
 .footerlink {
   text-decoration: none;
   color: #ffffff; }
-
-.c {
-  position: fixed;
-  bottom: 5rem;
-  right: 5rem;
-  background-color: aquamarine;
-  width: 19rem;
-  height: 43rem; }
