@@ -552,6 +552,7 @@ header{
             align-items: center;
             @media only screen and (max-width:$bp-small) {
                 width: 100%;
+                
             }
             &_svg{
                 width:5rem;
