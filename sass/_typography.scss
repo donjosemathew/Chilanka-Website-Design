@@ -20,6 +20,8 @@ $bp-extrasmallest:27rem; //400px
 html{
     box-sizing: border-box;
     font-size: 62.5%;
+    scroll-behavior: smooth;
+    
     @media only screen and (max-width:$bp-largest) {
         font-size: 58.5%;
     }
@@ -143,6 +145,9 @@ header{
         transform: scale(1.1);
         background-color: #EA384D;
         }
+        &:hover * a{
+            color: #ffffff;
+        }
     }
    
     
@@ -202,8 +207,9 @@ header{
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 1rem;
+    margin:3rem  1rem;
     
+    padding-top: 4rem;
     &_sec1{
         width: 40%;
         background-color: #ffffff; 

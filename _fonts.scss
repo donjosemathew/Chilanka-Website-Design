@@ -123,3 +123,19 @@ q{
             word-spacing: .01rem;
             font-style: italic;
 }
+.btnlink{
+    text-decoration: none;
+    color: #EA384D;
+    align-self: center;
+
+    
+    
+    cursor: pointer;
+    &:hover{
+        color: #ffffff;
+    }
+}
+.footerlink{
+    text-decoration: none;
+    color: #ffffff;
+}
