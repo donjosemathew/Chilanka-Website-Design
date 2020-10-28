@@ -1000,6 +1000,8 @@ q {
 .btnlink {
   text-decoration: none;
   color: #EA384D;
+  display: inline-block;
+  margin: 0;
   cursor: pointer; }
   .btnlink:hover {
     color: #ffffff; }
