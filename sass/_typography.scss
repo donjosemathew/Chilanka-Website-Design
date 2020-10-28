@@ -545,6 +545,7 @@ header{
         @media only screen and (max-width:$bp-small) {
             width: 100%;
         }
+        
         &_item{
             display: flex;
             flex-direction: row;
@@ -580,6 +581,9 @@ header{
     }
    }
     padding: 3rem;
+    @media only screen and (max-width:$bp-extrasmallest) {
+        padding: 1rem;
+    }
     &_item{
         box-shadow: 0 .1rem 1.3rem rgba(0, 0, 0, 0.1);
         padding: 2rem;
@@ -596,7 +600,7 @@ header{
         }
         @media only screen and (max-width:$bp-extrasmallest) {
             margin: 1.1rem 0;
-            padding: 1.5rem;
+            padding: 1.1rem;
             flex-direction: row;
         }
         &_img{

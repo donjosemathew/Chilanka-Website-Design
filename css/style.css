@@ -512,6 +512,9 @@ header {
     @media only screen and (max-width: 37.5em) {
       .faculty_container {
         width: 100%; } }
+  @media only screen and (max-width: 27rem) {
+    .faculty {
+      padding: 1rem; } }
   .faculty_item {
     box-shadow: 0 0.1rem 1.3rem rgba(0, 0, 0, 0.1);
     padding: 2rem;
@@ -527,7 +530,7 @@ header {
     @media only screen and (max-width: 27rem) {
       .faculty_item {
         margin: 1.1rem 0;
-        padding: 1.5rem;
+        padding: 1.1rem;
         flex-direction: row; } }
     .faculty_item_img {
       width: 13rem;
