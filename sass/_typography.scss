@@ -69,37 +69,39 @@ body{
 
 .navigation{
     &_checkbox{
-
+        //display: none;
     }
     &_button{
         background-color: #fff;
         width: 7rem;
         height: 7rem;
         position: fixed;
-        top: 6rem;
+        top: 5rem;
         right: 6rem;
         border-radius: 50%;
-        z-index: 2000;
+        z-index: 3500;
+        box-shadow: 0 0.1rem .8rem rgba(0, 0, 0, 0.1);
     }
     &_background{
         width: 6rem;
         height: 6rem;
         position: fixed;
         border-radius: 50%;
-        top: 6.5rem;
+        top: 5.5rem;
         right: 6.5rem;
         z-index: 1000;
         background-image: radial-gradient( rgba(#D31027, .9),
         rgba(#EA384D, .9));
-        transform: scale(80);
+        transform: scale(0);
     }
     &_nav{
         height: 100vh;
-        width: 100%;
         top: 0;
         left: 0;
         position: fixed;
         z-index: 1500;
+        width: 0;
+        opacity: 0;
     }
     &_list{
         position: absolute;
@@ -114,11 +116,11 @@ body{
     &_link{
         &:link,
         &:visited{
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 300;
         color: #fff;
         text-decoration: none;
-        padding: 1rem;
+        padding: .7rem;
         background-size: 230%;
         text-transform: uppercase;
         transition: all .4s;
@@ -131,7 +133,15 @@ body{
            color: #D31027;
            transform: translateX(1rem);
         }
+        span{
+            display: inline-block;
+            margin: 1rem;
+        }
         
+       
+    }
+    &_checkbox:checked ~ &_background{
+        transform: scale(0);  
     }
 }
 
