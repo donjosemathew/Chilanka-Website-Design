@@ -64,7 +64,76 @@ body{
 .container{
     overflow: hidden;
 }
+///////////////////////
+////////////navigation
 
+.navigation{
+    &_checkbox{
+
+    }
+    &_button{
+        background-color: #fff;
+        width: 7rem;
+        height: 7rem;
+        position: fixed;
+        top: 6rem;
+        right: 6rem;
+        border-radius: 50%;
+        z-index: 2000;
+    }
+    &_background{
+        width: 6rem;
+        height: 6rem;
+        position: fixed;
+        border-radius: 50%;
+        top: 6.5rem;
+        right: 6.5rem;
+        z-index: 1000;
+        background-image: radial-gradient( rgba(#D31027, .9),
+        rgba(#EA384D, .9));
+        transform: scale(80);
+    }
+    &_nav{
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 1500;
+    }
+    &_list{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        list-style: none;
+    }
+    &_item{
+        margin: 1rem;
+    }
+    &_link{
+        &:link,
+        &:visited{
+        font-size: 3rem;
+        font-weight: 300;
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem;
+        background-size: 230%;
+        text-transform: uppercase;
+        transition: all .4s;
+        display: inline-block;
+        background-image: linear-gradient(120deg,#D31027 0%,#EA384D 50%,#ffff 50% );
+        }
+        &:hover,
+        &:active{
+           background-position: 100%;
+           color: #D31027;
+           transform: translateX(1rem);
+        }
+        
+    }
+}
 
 /////////////
 header
@@ -618,6 +687,7 @@ header{
             flex-direction: column;
             justify-content: center;
             padding-left: 2rem;
+            margin: .5rem;
         }
         &_title{
             font-size: 1.8rem;
@@ -844,7 +914,7 @@ header{
     object-fit: cover;
     transition: all .2s;
     &:hover{
-        border: solid 1rem #EA384D;
+        border: solid .5rem #EA384D;
         transform: scale(1.1);
     }
     
@@ -1001,9 +1071,13 @@ header{
     right: 3rem;
     background-color: #ffffff;
     box-shadow: 0 0 .6rem rgba(78, 78, 78, 0.2);
-    padding: 1.7rem;
-    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
     border-radius: 50%;
+    width: 6rem;
+    height: 6rem;
     &_icon{
         width: 3.2rem;
         height: 3.2rem;
