@@ -29,6 +29,7 @@
         background-image: radial-gradient(#D31027,#EA384D);
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
+        
 
     }
 
@@ -36,12 +37,14 @@
         height: 100vh;
         position: fixed;
         top: 0;
-        left: 0;
+        left: -120%;
         z-index: 1500;
-
+        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        
         opacity: 0;
         width: 0;
-        transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        
+        
     }
 
     &__list {
@@ -52,6 +55,7 @@
         list-style: none;
         text-align: center;
         width: 100%;
+        
     }
 
     &__item {
@@ -70,7 +74,7 @@
             text-transform: uppercase;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ffffff 50%);
             background-size: 220%;
-            transition: all .4s;
+            transition: all .8s;
 
             span {
                 margin-right: 1.5rem;
@@ -95,6 +99,7 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+        left: 0;
     }
 
 
