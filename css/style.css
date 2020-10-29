@@ -1193,6 +1193,11 @@ q {
   background-position: 100%;
   color: #BA265D;
   transform: translateX(1rem); }
+  @media only screen and (max-width: 27rem) {
+    .navigation__link:hover, .navigation__link:active {
+      background-position: inherit;
+      transform: none;
+      color: #ffffff; } }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
