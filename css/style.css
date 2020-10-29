@@ -1189,6 +1189,11 @@ q {
   background-position: 100%;
   color: #BA265D;
   transform: translateX(1rem); }
+  @media only screen and (max-width: 31.25rem) {
+    .navigation__link:hover, .navigation__link:active {
+      transform: none;
+      color: #ffffff;
+      background-position: 0%; } }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
